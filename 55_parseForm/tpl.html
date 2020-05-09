@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javed Khan</title>
+</head>
+<body>
+    {{if .}}
+    <main>
+        {{range $key,$value := .}}
+            <p><striong>{{$key}}</striong></p>
+        <p><striong>{{$value}}</striong></p>
+        {{end}}
+    </main>
+    {{end}}
+    <form action="/?fname=James" method="post"></form>
+    <input type="text" name="fname" placeholder="first name" autofocus autocomplete="off">
+    <input type="submit" name="submit-btn" value="Click Me">
+</body>
+</html>

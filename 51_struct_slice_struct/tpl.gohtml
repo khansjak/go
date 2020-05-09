@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is test</title>
+</head>
+<body>
+    <ul>
+        {{range .Wisdom}}
+        <li>{{.Name}}-{{.Quote}}</li>
+        {{end}}
+    </ul>
+<ul>
+    {{range .Transport}}
+        <li>{{.Manufacturer}}-{{.Year}}-{{.Model}}</li>
+    {{end}}
+</ul>
+</body>
+</html>
